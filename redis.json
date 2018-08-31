@@ -1,0 +1,22 @@
+[
+  {
+    "essential": true,
+    "memory": 200,
+    "name": "redis",
+    "cpu": 200,
+    "image": "sorgerlab/omero-redis",
+    "portMappings": [
+        {
+            "containerPort": 6379,
+            "hostport": 6379
+
+        }
+    ],
+    "environment": [
+        {
+        "name": "REDIS_PASSWORD",
+        "value": "redis"
+        }
+    ]
+  }
+]

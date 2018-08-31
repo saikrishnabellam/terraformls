@@ -1,0 +1,22 @@
+[
+  {
+    "essential": true,
+    "memory": 500,
+    "name": "postgres",
+    "cpu": 500,
+    "image": "postgres:9.4",
+    "portMappings": [
+        {
+            "containerPort": 5432,
+            "hostPort": 5432
+        }
+
+    ],
+    "environment": [
+         {
+         "name": "POSTGRES_PASSWORD",
+         "value": "postgres"
+         }
+       ]
+ }
+]
